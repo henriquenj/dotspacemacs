@@ -45,6 +45,7 @@ values."
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      yaml
      python
+     (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      ;; markdown
      ;; org
      ;; (shell :variables
