@@ -37,12 +37,14 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      ivy
-     ;; auto-completion
+     auto-completion
      ;; better-defaults
      emacs-lisp
      git
      themes-megapack
      (colors :variables colors-enable-nyan-cat-progress-bar t)
+     yaml
+     python
      ;; markdown
      ;; org
      ;; (shell :variables
