@@ -314,6 +314,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (define-key evil-motion-state-map (kbd "C-k") 'evil-scroll-line-up)
+  (define-key evil-motion-state-map (kbd "C-j") 'evil-scroll-line-down)
+  (define-key evil-motion-state-map (kbd "C-e") nil)
+  (define-key evil-motion-state-map (kbd "C-y") nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
