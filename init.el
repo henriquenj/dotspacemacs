@@ -318,6 +318,10 @@ you should place your code here."
   (define-key evil-motion-state-map (kbd "C-j") 'evil-scroll-line-down)
   (define-key evil-motion-state-map (kbd "C-e") nil)
   (define-key evil-motion-state-map (kbd "C-y") nil)
+
+  ;; makes RET switch branches on magit
+  ;; https://emacs.stackexchange.com/a/30052/9273
+  (setq magit-visit-ref-behavior '(checkout-any focus-on-ref))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
