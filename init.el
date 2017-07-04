@@ -322,6 +322,9 @@ you should place your code here."
   ;; makes RET switch branches on magit
   ;; https://emacs.stackexchange.com/a/30052/9273
   (setq magit-visit-ref-behavior '(checkout-any focus-on-ref))
+
+  ;; man pages will be have 100 columns of width by default
+  (setenv "MANWIDTH" "100")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
