@@ -329,6 +329,9 @@ you should place your code here."
   ;; https://emacs.stackexchange.com/a/30052/9273
   (setq magit-visit-ref-behavior '(checkout-any focus-on-ref))
 
+  ;; remove "./" and "../" from counsel-find-file results
+  (setq ivy-extra-directories 'nil)
+
   ;; man pages will be have 100 columns of width by default
   (setenv "MANWIDTH" "100")
   )
