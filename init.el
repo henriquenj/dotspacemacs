@@ -319,6 +319,8 @@ you should place your code here."
   (define-key evil-motion-state-map (kbd "C-e") nil)
   (define-key evil-motion-state-map (kbd "C-y") nil)
 
+  (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
+  (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
   ;; makes RET switch branches on magit
   ;; https://emacs.stackexchange.com/a/30052/9273
   (setq magit-visit-ref-behavior '(checkout-any focus-on-ref))
