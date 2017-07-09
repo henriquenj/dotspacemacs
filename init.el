@@ -319,6 +319,10 @@ you should place your code here."
   (define-key evil-motion-state-map (kbd "C-e") nil)
   (define-key evil-motion-state-map (kbd "C-y") nil)
 
+  (define-key evil-insert-state-map (kbd "C-e") nil)
+  (define-key evil-insert-state-map (kbd "C-y") nil)
+  (define-key evil-insert-state-map (kbd "C-a") nil)
+
   (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
   ;; makes RET switch branches on magit
