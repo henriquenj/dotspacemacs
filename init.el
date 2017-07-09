@@ -314,10 +314,14 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
+  (define-key evil-normal-state-map (kbd "DEL") nil)
+
   (define-key evil-motion-state-map (kbd "C-k") 'evil-scroll-line-up)
   (define-key evil-motion-state-map (kbd "C-j") 'evil-scroll-line-down)
   (define-key evil-motion-state-map (kbd "C-e") nil)
   (define-key evil-motion-state-map (kbd "C-y") nil)
+  (define-key evil-motion-state-map (kbd "RET") nil)
 
   (define-key evil-insert-state-map (kbd "C-e") nil)
   (define-key evil-insert-state-map (kbd "C-y") nil)
@@ -325,6 +329,7 @@ you should place your code here."
 
   (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
+
   ;; makes RET switch branches on magit
   ;; https://emacs.stackexchange.com/a/30052/9273
   (setq magit-visit-ref-behavior '(checkout-any focus-on-ref))
