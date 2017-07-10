@@ -324,13 +324,14 @@ you should place your code here."
 
   (define-key evil-motion-state-map (kbd "C-k") 'evil-scroll-line-up)
   (define-key evil-motion-state-map (kbd "C-j") 'evil-scroll-line-down)
-  (define-key evil-motion-state-map (kbd "C-e") nil)
+  (define-key evil-motion-state-map (kbd "C-e") 'evil-end-of-line)
+  (define-key evil-motion-state-map (kbd "C-a") 'evil-first-non-blank)
   (define-key evil-motion-state-map (kbd "C-y") nil)
   (define-key evil-motion-state-map (kbd "RET") nil)
 
-  (define-key evil-insert-state-map (kbd "C-e") nil)
+  (define-key evil-insert-state-map (kbd "C-e") 'evil-end-of-visual-line)
+  (define-key evil-insert-state-map (kbd "C-a") 'evil-first-non-blank)
   (define-key evil-insert-state-map (kbd "C-y") nil)
-  (define-key evil-insert-state-map (kbd "C-a") nil)
 
   (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
