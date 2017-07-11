@@ -305,6 +305,10 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+
+  ;; Commit logs will have 72 columns with a sumary line of 50 characters
+  (add-hook 'git-commit-mode-hook (lambda () (setq fill-column 72)))
+  (setq git-commit-summary-max-length 50)
   )
 
 (defun dotspacemacs/user-config ()
