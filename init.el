@@ -316,7 +316,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
   ;; Commit log mode will start on insert state
   (add-hook 'git-commit-mode-hook (lambda ()
                                     (setq fill-column 72)
-                                    (evil-insert-state))            )
+                                    (evil-insert-state)))
 
   (setq git-commit-summary-max-length 50)
   )
