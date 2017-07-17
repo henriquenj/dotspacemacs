@@ -318,6 +318,13 @@ before packages are loaded. If you are unsure, you should try in setting them in
                                     (setq fill-column 72)
                                     (evil-insert-state)))
 
+  ;; Undersocre will not be considered word separator in most modes
+  (modify-syntax-entry ?_ "w")
+  (add-hook 'c-mode-common-hook (lambda () (modify-syntax-entry ?_ "w")))
+  (add-hook 'yaml-mode-hook (lambda () (modify-syntax-entry ?_ "w")))
+  ;; Makefiles will exceptionally have different rules
+  (add-hook 'makefile-mode-hook (lambda () (modify-syntax-entry ?_ "-")))
+
   (setq git-commit-summary-max-length 50)
   )
 
