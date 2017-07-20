@@ -370,6 +370,12 @@ you should place your code here."
 
   (define-key global-map (kbd "C-S-s") 'isearch-forward)
   (define-key global-map (kbd "C-S-r") 'isearch-backward)
+
+  ;; spaceline will not hide important segments (e.g. hiding buffer name which
+  ;; is very useful). See https://github.com/TheBB/spaceline/issues/146 for
+  ;; details.
+  (setq spaceline-responsive nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
