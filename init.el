@@ -361,6 +361,9 @@ you should place your code here."
   ;; makes RET switch branches on magit
   ;; https://emacs.stackexchange.com/a/30052/9273
   (setq magit-visit-ref-behavior '(checkout-any focus-on-ref))
+  ;; Magit will make a two-buffer Ediff session when pressing "e" on the magit
+  ;; status buffer. This restores the behaviour prior version 2.0
+  (setq magit-ediff-dwim-show-on-hunks t)
 
   ;; remove "../" from counsel-find-file results
   (setq ivy-extra-directories '("./"))
