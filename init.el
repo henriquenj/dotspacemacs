@@ -359,8 +359,8 @@ you should place your code here."
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
 
   ;; makes RET switch branches on magit
-  ;; https://emacs.stackexchange.com/a/30052/9273
-  (setq magit-visit-ref-behavior '(checkout-any focus-on-ref))
+  ;; check `magit-visit-ref-behavior' documentation for details
+  (setq magit-visit-ref-behavior '(create-branch checkout-any))
   ;; Magit will make a two-buffer Ediff session when pressing "e" on the magit
   ;; status buffer. This restores the behaviour prior version 2.0
   (setq magit-ediff-dwim-show-on-hunks t)
