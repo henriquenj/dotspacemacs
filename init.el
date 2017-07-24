@@ -379,6 +379,9 @@ you should place your code here."
   ;; details.
   (setq spaceline-responsive nil)
 
+  ;; Disable "#." lockfiles generation
+  (setq create-lockfiles nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
