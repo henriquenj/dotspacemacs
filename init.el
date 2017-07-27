@@ -357,6 +357,7 @@ you should place your code here."
 
   (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
+  (spacemacs/set-leader-keys "bl" 'buffer-menu-other-window)
 
   ;; makes RET switch branches on magit
   ;; check `magit-visit-ref-behavior' documentation for details
