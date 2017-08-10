@@ -321,7 +321,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
   ;; Undersocre will not be considered word separator in most modes
   (modify-syntax-entry ?_ "w")
-  (add-hook 'c-mode-common-hook (lambda () (modify-syntax-entry ?_ "w")))
+  ;; for C based modes, disable annoying auto-indent because I use clang-format
+  (add-hook 'c-mode-common-hook (lambda () (modify-syntax-entry ?_ "w")
+                                  (setq c-electric-flag nil)))
   (add-hook 'yaml-mode-hook (lambda () (modify-syntax-entry ?_ "w")))
   ;; Makefiles will exceptionally have different rules
   (add-hook 'makefile-mode-hook (lambda () (modify-syntax-entry ?_ "-")))
