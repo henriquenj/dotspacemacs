@@ -328,6 +328,11 @@ before packages are loaded. If you are unsure, you should try in setting them in
   ;; Makefiles will exceptionally have different rules
   (add-hook 'makefile-mode-hook (lambda () (modify-syntax-entry ?_ "-")))
 
+  ;; Set TAB as yas-maybe-expand. If there's no expansion available, call
+  ;; ordinary TAB command.
+  (add-hook 'yas-minor-mode-hook (lambda ()
+                                   (define-key yas-minor-mode-map (kbd "TAB") yas-maybe-expand) ))
+
   (setq git-commit-summary-max-length 50)
   )
 
@@ -357,7 +362,6 @@ you should place your code here."
   (define-key evil-insert-state-map (kbd "C-a") 'evil-first-non-blank)
   (define-key evil-insert-state-map (kbd "C-y") nil)
 
-  (define-key evil-insert-state-map (kbd "TAB") 'yas-expand)
 
   (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
