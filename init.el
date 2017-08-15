@@ -357,6 +357,8 @@ you should place your code here."
   (define-key evil-insert-state-map (kbd "C-a") 'evil-first-non-blank)
   (define-key evil-insert-state-map (kbd "C-y") nil)
 
+  (define-key evil-insert-state-map (kbd "TAB") 'yas-expand)
+
   (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bl" 'buffer-menu-other-window)
