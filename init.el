@@ -391,6 +391,10 @@ you should place your code here."
   ;; Disable "#." lockfiles generation
   (setq create-lockfiles nil)
 
+  ;; disable auto-indent for some modes
+  (add-to-list 'spacemacs-indent-sensitive-modes 'c++-mode)
+  (add-to-list 'spacemacs-indent-sensitive-modes 'c-mode)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
