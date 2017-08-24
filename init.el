@@ -373,6 +373,9 @@ you should place your code here."
   ;; Magit will make a two-buffer Ediff session when pressing "e" on the magit
   ;; status buffer. This restores the behaviour prior version 2.0
   (setq magit-ediff-dwim-show-on-hunks t)
+  ;; Disable Gravatar images on magit buffers
+  ;; Loading them from network introduces delay on magit
+  (setq magit-revision-show-gravatars nil)
 
   ;; remove "../" from counsel-find-file results
   (setq ivy-extra-directories '("./"))
