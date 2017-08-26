@@ -398,6 +398,10 @@ you should place your code here."
   (add-to-list 'spacemacs-indent-sensitive-modes 'c++-mode)
   (add-to-list 'spacemacs-indent-sensitive-modes 'c-mode)
 
+  ;; disable smart parenthesis
+  (add-hook 'smartparens-enabled-hook #'spacemacs/toggle-smartparens-off)
+  (spacemacs/toggle-smartparens-globally-off)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
