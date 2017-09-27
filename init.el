@@ -41,6 +41,7 @@ values."
      better-defaults
      emacs-lisp
      git
+     (ibuffer :variables ibuffer-group-buffers-by 'projects)
      themes-megapack
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      yaml
@@ -369,7 +370,7 @@ you should place your code here."
 
   (spacemacs/set-leader-keys "wD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
-  (spacemacs/set-leader-keys "bl" 'buffer-menu-other-window)
+  (spacemacs/set-leader-keys "bl" 'ibuffer)
 
   ;; makes RET switch branches on magit
   ;; check `magit-visit-ref-behavior' documentation for details
