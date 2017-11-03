@@ -335,6 +335,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
                                    (define-key yas-minor-mode-map (kbd "TAB") yas-maybe-expand) ))
 
   (setq git-commit-summary-max-length 50)
+
+  ;; do not show any recent commit on magit status window
+  (setq magit-log-section-commit-count 0)
   )
 
 (defun dotspacemacs/user-config ()
