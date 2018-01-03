@@ -402,6 +402,9 @@ you should place your code here."
   ;; Disable "#." lockfiles generation
   (setq create-lockfiles nil)
 
+  ;; Remove starting ^ from M-x default input when using ivy
+  (setq ivy-initial-inputs-alist nil)
+
   ;; disable auto-indent for some modes
   (add-to-list 'spacemacs-indent-sensitive-modes 'c++-mode)
   (add-to-list 'spacemacs-indent-sensitive-modes 'c-mode)
