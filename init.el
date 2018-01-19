@@ -46,7 +46,8 @@ values."
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      yaml
      python
-     (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
+     (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode
+            c-c++-enable-rtags-support t)
      ;; markdown
      ;; org
      ;; (shell :variables
