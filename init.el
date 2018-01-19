@@ -355,6 +355,7 @@ you should place your code here."
   ;; UTF-8 for powerline separator looks good on OSX without changing the color
   ;; space
   (setq powerline-default-separator 'utf-8)
+  (spaceline-toggle-hud-off)
 
   ;; This section contains general Evil rebindings. These are mostly just removing
   ;; binds to make them work as in default Emacs.
