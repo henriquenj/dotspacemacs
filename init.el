@@ -327,8 +327,6 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (add-hook 'c-mode-common-hook (lambda () (modify-syntax-entry ?_ "w")
                                   (setq c-electric-flag nil)))
   (add-hook 'yaml-mode-hook (lambda () (modify-syntax-entry ?_ "w")))
-  ;; Makefiles will exceptionally have different rules
-  (add-hook 'makefile-mode-hook (lambda () (modify-syntax-entry ?_ "-")))
 
   ;; Set TAB as yas-maybe-expand. If there's no expansion available, call
   ;; ordinary TAB command.
