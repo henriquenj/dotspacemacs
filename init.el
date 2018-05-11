@@ -405,6 +405,9 @@ you should place your code here."
   ;; Remove starting ^ from M-x default input when using ivy
   (setq ivy-initial-inputs-alist nil)
 
+  ;; Navigating on eshell history will not show duplicate entries
+  (setq comint-input-ignoredups t)
+
   ;; disable auto-indent for some modes
   (add-to-list 'spacemacs-indent-sensitive-modes 'c++-mode)
   (add-to-list 'spacemacs-indent-sensitive-modes 'c-mode)
