@@ -138,6 +138,14 @@ values."
    dotspacemacs-themes '(monokai gotham gruvbox)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
+   ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
+   ;; `all-the-icons', `custom', `vim-powerline' and `vanilla'. The first three
+   ;; are spaceline themes. `vanilla' is default Emacs mode-line. `custom' is a
+   ;; user defined themes, refer to the DOCUMENTATION.org for more info on how
+   ;; to create your own spaceline theme. Value can be a symbol or list with\
+   ;; additional properties.
+   ;; (default '(spacemacs :separator wave :separator-scale 1.5))
+   dotspacemacs-mode-line-theme '(spacemacs :separator arrow :separator-scale 1.0)
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
@@ -349,11 +357,6 @@ you should place your code here."
 
   ;; make multiple-cursors commands available under "g r"
   (global-evil-mc-mode  1)
-
-  ;; UTF-8 for powerline separator looks good on OSX without changing the color
-  ;; space
-  (setq powerline-default-separator 'utf-8)
-  (spaceline-toggle-hud-off)
 
   ;; This section contains general Evil rebindings. These are mostly just removing
   ;; binds to make them work as in default Emacs.
