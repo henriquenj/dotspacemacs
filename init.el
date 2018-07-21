@@ -43,7 +43,6 @@ values."
      git
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      themes-megapack
-     (colors :variables colors-enable-nyan-cat-progress-bar t)
      yaml
      python
      (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode
@@ -145,7 +144,7 @@ values."
    ;; to create your own spaceline theme. Value can be a symbol or list with\
    ;; additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(spacemacs :separator arrow :separator-scale 1.0)
+   dotspacemacs-mode-line-theme '(vim-powerline :separator arrow :separator-scale 1.0)
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
