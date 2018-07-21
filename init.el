@@ -386,6 +386,9 @@ you should place your code here."
   ;; Disable Gravatar images on magit buffers
   ;; Loading them from network introduces delay on magit
   (setq magit-revision-show-gravatars nil)
+  ;; Highlight differences between lines on magit diff buffers if the cursor is
+  ;; under a diff hunk
+  (setq magit-diff-refine-hunk t)
 
   ;; remove "../" from counsel-find-file results
   (setq ivy-extra-directories '("./"))
