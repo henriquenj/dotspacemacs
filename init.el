@@ -41,6 +41,7 @@ values."
      better-defaults
      emacs-lisp
      git
+     markdown
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      themes-megapack
      yaml
