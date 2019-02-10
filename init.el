@@ -363,19 +363,17 @@ you should place your code here."
   ;; make multiple-cursors commands available under "g r"
   (global-evil-mc-mode  1)
 
-  ;; This section contains general Evil rebindings. These are mostly just removing
-  ;; binds to make them work as in default Emacs.
+  ;; This section contains general Evil rebindings.
   (define-key evil-normal-state-map (kbd "DEL") nil)
 
   (define-key evil-motion-state-map (kbd "C-k") 'evil-scroll-line-up)
   (define-key evil-motion-state-map (kbd "C-j") 'evil-scroll-line-down)
   (define-key evil-motion-state-map (kbd "C-e") 'evil-end-of-line)
   (define-key evil-motion-state-map (kbd "C-a") 'evil-first-non-blank)
-  (define-key evil-motion-state-map (kbd "C-y") nil)
-  (define-key evil-motion-state-map (kbd "RET") nil)
 
   (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
   (define-key evil-insert-state-map (kbd "C-a") 'evil-first-non-blank)
+  ;; makes C-y works as default Emacs
   (define-key evil-insert-state-map (kbd "C-y") nil)
 
 
