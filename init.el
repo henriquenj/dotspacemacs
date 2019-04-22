@@ -46,6 +46,7 @@ values."
      themes-megapack
      yaml
      python
+     multiple-cursors
      (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      ;; markdown
      ;; org
@@ -358,9 +359,6 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
   (set-default 'truncate-lines t)
-
-  ;; make multiple-cursors commands available under "g r"
-  (global-evil-mc-mode  1)
 
   ;; This section contains general Evil rebindings.
   (define-key evil-normal-state-map (kbd "DEL") nil)
