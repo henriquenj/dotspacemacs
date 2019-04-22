@@ -46,8 +46,7 @@ values."
      themes-megapack
      yaml
      python
-     (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode
-            c-c++-enable-rtags-support t)
+     (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      ;; markdown
      ;; org
      ;; (shell :variables
