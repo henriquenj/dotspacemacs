@@ -423,6 +423,7 @@ you should place your code here."
   ;; disable auto-indent for some modes
   (add-to-list 'spacemacs-indent-sensitive-modes 'c++-mode)
   (add-to-list 'spacemacs-indent-sensitive-modes 'c-mode)
+  (add-to-list 'spacemacs-indent-sensitive-modes 'java-mode)
 
   ;; disable smart parenthesis
   (add-hook 'smartparens-enabled-hook #'spacemacs/toggle-smartparens-off)
