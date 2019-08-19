@@ -47,6 +47,12 @@ values."
      yaml
      python
      multiple-cursors
+     (lsp :variables lsp-ui-doc-enable nil
+          lsp-enable-on-type-formatting nil
+          lsp-ui-sideline-show-hover nil
+          lsp-ui-sideline-show-symbol nil
+          lsp-ui-sideline-show-code-actions nil)
+     (java :variables java-backend 'lsp)
      (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      ;; markdown
      ;; org
