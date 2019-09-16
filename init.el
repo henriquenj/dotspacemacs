@@ -410,6 +410,8 @@ you should place your code here."
   ;; is very useful). See https://github.com/TheBB/spaceline/issues/146 for
   ;; details.
   (setq spaceline-responsive nil)
+  ;; add current org task to the modeline with elapsed time
+  (spaceline-toggle-org-clock)
 
   ;; Disable "#." lockfiles generation
   (setq create-lockfiles nil)
