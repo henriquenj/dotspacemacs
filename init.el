@@ -367,8 +367,6 @@ you should place your code here."
   (set-default 'truncate-lines t)
 
   ;; This section contains general Evil rebindings.
-  (define-key evil-normal-state-map (kbd "DEL") nil)
-
   (define-key evil-motion-state-map (kbd "C-k") 'evil-scroll-line-up)
   (define-key evil-motion-state-map (kbd "C-j") 'evil-scroll-line-down)
   (define-key evil-motion-state-map (kbd "C-e") 'evil-end-of-line)
