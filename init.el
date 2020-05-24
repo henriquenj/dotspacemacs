@@ -426,6 +426,10 @@ you should place your code here."
   (add-to-list 'spacemacs-indent-sensitive-modes 'c-mode)
   (add-to-list 'spacemacs-indent-sensitive-modes 'java-mode)
 
+  ;; set default action for SPC-p-p
+  (setq counsel-projectile-switch-project-action
+        '(1 ("D" counsel-projectile-switch-project-action-dired "open project in dired")))
+
   ;; disable smart parenthesis
   (add-hook 'smartparens-enabled-hook #'spacemacs/toggle-smartparens-off)
   (spacemacs/toggle-smartparens-globally-off)
