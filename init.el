@@ -151,7 +151,7 @@ values."
    ;; to create your own spaceline theme. Value can be a symbol or list with\
    ;; additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(spacemacs :separator utf-8 :separator-scale 1.0)
+   dotspacemacs-mode-line-theme '(doom)
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
@@ -405,12 +405,12 @@ you should place your code here."
   (define-key global-map (kbd "C-S-r") 'isearch-backward)
   (define-key global-map (kbd "C-s") 'swiper-isearch)
 
-  ;; spaceline will not hide important segments (e.g. hiding buffer name which
-  ;; is very useful). See https://github.com/TheBB/spaceline/issues/146 for
-  ;; details.
-  (setq spaceline-responsive nil)
-  ;; add current org task to the modeline with elapsed time
-  (spaceline-toggle-org-clock)
+  ;; doom-modeline configuration stuff
+  ;; full list of customization option here
+  ;; https://seagle0128.github.io/doom-modeline/
+  (setq doom-modeline-buffer-file-name-style 'truncate-with-project)
+  (setq doom-modeline-buffer-encoding nil)
+
 
   ;; Disable "#." lockfiles generation
   (setq create-lockfiles nil)
