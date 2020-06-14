@@ -403,7 +403,6 @@ you should place your code here."
 
   (define-key global-map (kbd "C-S-s") 'isearch-forward)
   (define-key global-map (kbd "C-S-r") 'isearch-backward)
-  (define-key global-map (kbd "C-s") 'swiper-isearch)
 
   ;; doom-modeline configuration stuff
   ;; full list of customization option here
