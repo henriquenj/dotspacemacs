@@ -340,9 +340,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
   ;; Undersocre will not be considered word separator in most modes
   (modify-syntax-entry ?_ "w")
-  ;; for C based modes, disable annoying auto-indent because I use clang-format
-  (add-hook 'c-mode-common-hook (lambda () (modify-syntax-entry ?_ "w")
-                                  (setq c-electric-flag nil)))
+  (add-hook 'c-mode-common-hook (lambda () (modify-syntax-entry ?_ "w")))
   (add-hook 'yaml-mode-hook (lambda () (modify-syntax-entry ?_ "w")))
 
   ;; Set TAB as yas-maybe-expand. If there's no expansion available, call
