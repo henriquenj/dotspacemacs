@@ -380,6 +380,10 @@ you should place your code here."
   (spacemacs/set-leader-keys "bD" 'kill-buffer-and-window)
   (spacemacs/set-leader-keys "bl" 'ibuffer)
 
+  ;; Change default indentation style for C-like languages
+  (setq c-default-style "linux"
+        c-basic-offset 4)
+
   ;; makes RET switch branches on magit
   ;; check `magit-visit-ref-behavior' documentation for details
   (setq magit-visit-ref-behavior '(create-branch checkout-any))
