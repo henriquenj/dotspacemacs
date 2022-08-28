@@ -383,6 +383,7 @@ you should place your code here."
   ;; Change default indentation style for C-like languages
   (setq c-default-style "linux"
         c-basic-offset 4)
+  (c-set-offset 'inline-open '0)
 
   ;; makes RET switch branches on magit
   ;; check `magit-visit-ref-behavior' documentation for details
