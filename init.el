@@ -436,6 +436,9 @@ you should place your code here."
   (add-hook 'smartparens-enabled-hook #'spacemacs/toggle-smartparens-off)
   (spacemacs/toggle-smartparens-globally-off)
 
+  ;; make dired use human readable sizes (KB, MB, etc)
+  (setq dired-listing-switches "-alh")
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
