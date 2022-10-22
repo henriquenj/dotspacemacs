@@ -438,6 +438,8 @@ you should place your code here."
 
   ;; make dired use human readable sizes (KB, MB, etc)
   (setq dired-listing-switches "-alh")
+  ;; Open new dirs with tab
+  (define-key dired-mode-map (kbd "TAB") 'dired-maybe-insert-subdir)
 
   )
 
