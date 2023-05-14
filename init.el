@@ -441,6 +441,9 @@ you should place your code here."
   ;; Open new dirs with tab
   (define-key dired-mode-map (kbd "TAB") 'dired-maybe-insert-subdir)
 
+  ;; disable undo-tree persistent history
+  (setq undo-tree-auto-save-history nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
