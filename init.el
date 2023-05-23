@@ -444,6 +444,12 @@ you should place your code here."
   ;; disable undo-tree persistent history
   (setq undo-tree-auto-save-history nil)
 
+  ;; projectile performance configs
+  ;; sets up a cache on ~/.emacs.d/.cache
+  (setq projectile-enable-caching t)
+  ;; avoid recursively going on submodules
+  (setq projectile-git-submodule-command "")
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
