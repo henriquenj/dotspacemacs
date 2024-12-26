@@ -316,12 +316,6 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup 'changed
-   ;; To change the way spacemacs marks buffers as useless, you can customize
-   ;; `spacemacs-useless-buffers-regexp' which marks buffers matching the regexp
-   ;; as useless. The variable `spacemacs-useful-buffers-regexp' marks buffers
-   ;; matching the regexp as useful buffers. Both can be customized the same
-   ;; way. http://spacemacs.org/doc/FAQ.html#change-special-buffer-rules
-   spacemacs-useless-buffers-regexp nil ;; All buffers useful by default
    ))
 
 (defun dotspacemacs/user-init ()
@@ -449,6 +443,13 @@ you should place your code here."
   (setq projectile-enable-caching t)
   ;; avoid recursively going on submodules
   (setq projectile-git-submodule-command "")
+
+  ;; To change the way spacemacs marks buffers as useless, you can customize
+  ;; `spacemacs-useless-buffers-regexp' which marks buffers matching the regexp
+  ;; as useless. The variable `spacemacs-useful-buffers-regexp' marks buffers
+  ;; matching the regexp as useful buffers. Both can be customized the same
+  ;; way. http://spacemacs.org/doc/FAQ.html#change-special-buffer-rules
+  (setq spacemacs-useless-buffers-regexp nil) ;; All buffers useful by default
 
   )
 
